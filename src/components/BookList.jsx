@@ -13,7 +13,7 @@ const BookList = props => {
 
 	return (
 		<>
-			<Row className="justify-content-center mt-5">
+			<Row className="justify-content-center mt-5" data-testid="gigio">
 				<Col xs={12} md={3} className="text-center">
 					<Form.Group>
 						<Form.Control
@@ -27,7 +27,7 @@ const BookList = props => {
 			</Row>
 			<Row className="g-2 mt-3 d-flex">
 				<Col className="h-100" xs={4} md={3}>
-					<CommentArea asin={selectedAsin} />
+					<CommentArea asin={selectedAsin} data-testid="comment-show" />
 				</Col>
 				<Col xs={9} md={9} className="d-flex flex-wrap  ">
 					{props.books

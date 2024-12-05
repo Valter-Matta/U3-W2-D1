@@ -56,7 +56,7 @@ const CommentArea = props => {
 	};
 
 	return (
-		<div className="text-center">
+		<div className="text-center comment-list">
 			{!props.asin && <p>Seleziona un libro per visualizzare i commenti</p>}
 			{isLoading && <Loading />}
 			{isError && <Error />}

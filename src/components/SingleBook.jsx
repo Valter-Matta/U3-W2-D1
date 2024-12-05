@@ -9,7 +9,7 @@ const SingleBook = props => {
 
 	return (
 		<>
-			<Col>
+			<Col className="border">
 				<Card
 					onClick={props.onSelect}
 					style={{
